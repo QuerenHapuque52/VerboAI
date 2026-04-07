@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#1f1c0b",
+                    "on-surface-variant": "#43474e",
+                    "secondary": "#735c00",
+                    "inverse-primary": "#adc7f7",
+                    "on-secondary-fixed": "#241a00",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c4c6cf",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary-container": "#a69f87",
+                    "surface-tint": "#455f88",
+                    "tertiary-container": "#3a3623",
+                    "tertiary-fixed": "#ebe2c8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-container": "#fed65b",
+                    "tertiary-fixed-dim": "#cec6ad",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary": "#002045",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#4c4733",
+                    "on-primary-fixed": "#001b3c",
+                    "outline": "#74777f",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary-container": "#86a0cd",
+                    "surface-bright": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "on-secondary-container": "#745c00",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "primary-fixed-dim": "#adc7f7",
+                    "tertiary": "#242110",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadb",
+                    "surface-variant": "#e1e3e4",
+                    "surface": "#f8f9fa",
+                    "surface-container": "#edeeef",
+                    "on-surface": "#191c1d",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffe088",
+                    "on-background": "#191c1d",
+                    "primary-container": "#1a365d",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-container-high": "#e7e8e9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-border { border: none !important; }
+        .tonal-transition { transition: background-color 0.3s ease; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a professional man in a dark blue suit with a soft warm office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuwggDWzYOop1_NGseCh3ueIpplACFU1GgJ0Q0TT7kRVirkJzLh6OLhYqaMgJp1BLRNe_g393tq1IvXSL0TkGWl3RDOPJH7ZGAMQC6B2ac_iO-kICfYzgZTfeWBT6cAH0TSTav1A6HvrUdBWv0SXL-_zvK3LwaAw5YobfS3jrashZ7GTI6D3iwDrQkqodFw2v2_rS3rAD4u8xttQ17CKapMA5hiR-M5r3xDv41IEd7ClMwiUKMVTAFgwRDr0VlBSrQEPT8LcvnZNEy"/>
+</div>
+<span class="text-xl font-serif font-bold text-blue-900 dark:text-blue-50">The Modern Scribe</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 dark:text-slate-400 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto space-y-12">
+<!-- Hero Section & Description -->
+<section class="space-y-4">
+<div class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-xs font-bold rounded-lg tracking-widest uppercase">Preferências de Voz</div>
+<h1 class="text-4xl md:text-5xl font-headline text-primary font-bold leading-tight">Configurar Perfil de Público</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                A nossa inteligência artificial adapta cada palavra para ressoar com quem ouve. Ao selecionar um perfil, ajustamos automaticamente a complexidade teológica, o vocabulário e o tom das narrativas.
+            </p>
+</section>
+<!-- Bento Grid Selection: Público Alvo -->
+<section class="space-y-6">
+<h2 class="text-2xl font-headline text-primary">Público Alvo</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Crianças -->
+<button class="group relative flex flex-col p-6 bg-surface-container-lowest rounded-xl text-left tonal-transition hover:bg-primary-container hover:text-on-primary-container ring-1 ring-outline-variant/15 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-secondary-fixed-dim">child_care</span>
+<h3 class="text-xl font-headline font-bold mb-2">Crianças</h3>
+<p class="text-sm opacity-80 leading-snug">Histórias simples, lúdicas e focadas em lições morais claras.</p>
+</button>
+<!-- Líderes -->
+<button class="group relative flex flex-col p-6 bg-primary text-on-primary rounded-xl text-left tonal-transition shadow-xl ring-1 ring-primary/20">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-4">school</span>
+<div class="absolute top-4 right-4">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2">Líderes</h3>
+<p class="text-sm opacity-90 leading-snug">Teologia profunda, exegese técnica e aplicações ministeriais.</p>
+</button>
+<!-- Jovens -->
+<button class="group relative flex flex-col p-6 bg-surface-container-lowest rounded-xl text-left tonal-transition hover:bg-primary-container hover:text-on-primary-container ring-1 ring-outline-variant/15 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-secondary-fixed-dim">groups</span>
+<h3 class="text-xl font-headline font-bold mb-2">Jovens</h3>
+<p class="text-sm opacity-80 leading-snug">Linguagem contemporânea, dilemas atuais e tom inspirador.</p>
+</button>
+<!-- Curiosos -->
+<button class="group relative flex flex-col p-6 bg-surface-container-lowest rounded-xl text-left tonal-transition hover:bg-primary-container hover:text-on-primary-container ring-1 ring-outline-variant/15 transition-all md:col-span-2">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl group-hover:text-secondary-fixed-dim">explore</span>
+<div>
+<h3 class="text-xl font-headline font-bold mb-2">Iniciantes &amp; Curiosos</h3>
+<p class="text-sm opacity-80 leading-snug">Explicações didáticas de termos bíblicos sem jargões complexos.</p>
+</div>
+</div>
+</button>
+<!-- Acadêmicos -->
+<button class="group relative flex flex-col p-6 bg-surface-container-lowest rounded-xl text-left tonal-transition hover:bg-primary-container hover:text-on-primary-container ring-1 ring-outline-variant/15 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-secondary-fixed-dim">menu_book</span>
+<h3 class="text-xl font-headline font-bold mb-2">Acadêmicos</h3>
+<p class="text-sm opacity-80 leading-snug">Foco em história, contexto original e referências cruzadas.</p>
+</button>
+</div>
+</section>
+<!-- Language Preference Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-8">
+<div class="space-y-4">
+<h2 class="text-2xl font-headline text-primary">Preferência de Linguagem</h2>
+<p class="text-on-surface-variant">Como você prefere que o texto seja estruturado? Isso altera a cadência e o uso de pronomes.</p>
+</div>
+<div class="flex p-1 bg-surface-container-high rounded-full w-full">
+<button class="flex-1 py-3 px-6 rounded-full bg-primary text-on-primary font-bold text-sm shadow-md transition-all">Padrão Culto</button>
+<button class="flex-1 py-3 px-6 rounded-full text-on-surface-variant font-bold text-sm hover:bg-surface-container-lowest transition-all">Informal / Coloquial</button>
+</div>
+</section>
+<!-- Saved Profiles Section -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<h2 class="text-2xl font-headline text-primary">Perfis Salvos</h2>
+<button class="text-secondary font-headline font-bold text-sm flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-lg">add</span> Criar Novo Perfil
+                </button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl ring-1 ring-outline-variant/15 group hover:shadow-md transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">church</span>
+</div>
+<div>
+<p class="font-bold text-primary">Escola Dominical</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">CRIANÇAS • PADRÃO CULTO</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl ring-1 ring-outline-variant/15 group hover:shadow-md transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<div>
+<p class="font-bold text-primary">Estudo Pessoal</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">LÍDERES • PADRÃO CULTO</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Save Button CTA -->
+<div class="pt-8 flex flex-col items-center">
+<button class="w-full md:w-64 py-4 px-8 bg-primary text-on-primary rounded-full font-bold shadow-lg hover:scale-[0.98] transition-transform duration-200">
+                Salvar Configurações
+            </button>
+<p class="mt-4 text-sm text-on-surface-variant italic">As alterações serão aplicadas em todas as futuras gerações.</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,32,69,0.06)] rounded-t-3xl md:hidden">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-sans text-[11px] uppercase tracking-wider font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2" href="#">
+<span class="material-symbols-outlined">book_2</span>
+<span class="font-sans text-[11px] uppercase tracking-wider font-medium">Library</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-sans text-[11px] uppercase tracking-wider font-medium">Generator</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-900 dark:text-blue-100 rounded-2xl px-5 py-2 scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-sans text-[11px] uppercase tracking-wider font-medium">Settings</span>
+</a>
+</nav>
+<!-- Sidebar for Desktop -->
+<aside class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-8 items-center py-8 px-4 bg-white/80 backdrop-blur-xl rounded-full shadow-xl ring-1 ring-outline-variant/15 z-50">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">home</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">book_2</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">auto_awesome</span></a>
+<a class="text-primary" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span></a>
+</aside>
+</body></html>
